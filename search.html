@@ -198,7 +198,7 @@ const ITEMS = [
   { id:'ENROLL', bin:'441920', type:'DEBIT', subtype:'CLASSIC', expiry:'02/28', name:'Clifford ****', country:'US', state:'-', fullAddress:true, BAL:'$639', extra:'Phone', bank:'German American', base:'1010', price:6.00, test:false },
   { id:'ENROLL', bin:'441920', type:'DEBIT', subtype:'CLASSIC', expiry:'04/29', name:'Cynthis ****', country:'US', state:'-', fullAddress:true, BAL:'$781', extra:'Phone', bank:'German American', base:'1012', price:8.00, test:false },
   { id:'ENROLL', bin:'441920', type:'DEBIT', subtype:'CLASSIC', expiry:'03/26', name:'Mary ****', country:'US', state:'-', fullAddress:true, BAL:'$4882', extra:'Phone', bank:'German American', base:'1014', price:48.00, test:false },
-  { id:'ENROLL', bin:'441920', type:'DEBIT', subtype:'CLASSIC', expiry:'11/27', name:'Mark ****', country:'US', state:'-', fullAddress:true, zBAL:'$458', extra:'Phone', bank:'German American', base:'1015', price:5.00, test:false },
+  { id:'ENROLL', bin:'441920', type:'DEBIT', subtype:'CLASSIC', expiry:'11/27', name:'Mark ****', country:'US', state:'-', fullAddress:true, BAL:'$458', extra:'Phone', bank:'German American', base:'1015', price:5.00, test:false },
   // add more items as needed...
 ];
 
@@ -223,7 +223,7 @@ function renderItem(it){
       <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">
         <div class="meta-box small">Country: <strong>${it.country}</strong> ${it.state && it.state !== '-' ? '/ ' + it.state : ''}</div>
         <div class="meta-box small">Full Address: <strong>${it.fullAddress? 'Yes' : 'No'}</strong></div>
-        <div class="meta-box small">ZIP: <strong>${it.zip}</strong></div>
+        <div class="meta-box small">BAL: <strong>${it.BAL}</strong></div>
         <div class="meta-box small">Extras: <strong>${it.extra}</strong></div>
         <div class="meta-box small">Bank: <strong>${it.bank}</strong></div>
         <div class="meta-box small">Base: <strong>${it.base}</strong></div>
