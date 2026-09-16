@@ -233,6 +233,18 @@
       document.getElementById('captcha-input').value='';
     }
     newCaptcha();
+
+    // Demo-only form behavior
+document.getElementById('loginForm').addEventListener('submit', (e) => {
+  e.preventDefault();
+  alert('Invalid user or password');
+});
+
+document.getElementById('registerForm').addEventListener('submit', (e) => {
+  e.preventDefault();
+  alert('Invalid txid');
+});
+    
   </script>
 </body>
 </html>
